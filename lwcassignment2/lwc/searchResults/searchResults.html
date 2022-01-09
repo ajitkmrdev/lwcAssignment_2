@@ -1,0 +1,17 @@
+<!--component developed to show the list of account of perticular type selected in child component 1-->
+<template>
+    <template if:true={accountList.data}>
+        <div class="slds-box searchbgcolor">
+        <template for:each={accountList.data} for:item="account">
+            <div key={account.Id} class="slds-p-top_large">
+             <c-card-component account={account} key={account.Id}></c-card-component>
+            </div>
+        </template>
+    </div>
+    </template>
+    <template if:true={accountList.error}>
+        {accountList.error}
+    </template>
+   
+
+</template>

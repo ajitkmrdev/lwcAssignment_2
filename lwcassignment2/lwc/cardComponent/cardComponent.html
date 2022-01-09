@@ -1,0 +1,13 @@
+<!--Child Component 2 : Component to display Account details With detail button-->
+<template>
+  <div class="accountCard slds-box">
+            <strong>Name : {account.Name}</strong><br/>
+            <strong>Industry : {account.Industry}</strong><br/>
+            <strong>Type : {account.Type}</strong><br/>
+            <strong>Website : {account.Website}</strong><br/>
+            <strong>AccountNumber : {account.AccountNumber}</strong><br/>
+       <br/>
+       <!--Button to show details on Component 3-->
+      <lightning-button label="Details" variant="Brand" value={account} onclick={handledetailClick}></lightning-button>
+      </div>
+</template>
